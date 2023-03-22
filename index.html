@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Consola de windows</title>
+        <script src="https://kit.fontawesome.com/db13db8e19.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="D:\Proyectos\consola\styles.css">
+        <link rel="shortcut icon" href="D:\Proyectos\consola\img\console.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+        
+        
+    </head>
+    <body>
+        <main>
+            
+            <div class="ventana">
+                <div class="vent left-vent">
+                    <i class="fa-solid fa-window-maximize"></i>
+                    cmd/windows
+                </div>
+                <div class="vent right-vent">
+                    <i class="fa-solid fa-minus i-hover"></i>
+                    <i class="fa-regular fa-square i-hover"></i>
+                    <i class="fa-solid fa-xmark i-close-h"></i>
+                </div>
+                
+            </div>
+            <div class="consola" id="cons">
+                <div id="pantalla">
+                    
+                    <div class="welcome">
+                         Welcome to the console  - <span class="command" id="date"> </span> </br>
+                         Enter a currency to see bitcoins value - To see the available currencies enter '<span class="command">help</span>'  
+                    </div>
+                    
+                </div>
+
+                <div class="linea" id="prompt">
+                    D:\Guest> <input id="inputLine" type="text"> <!--Linea de comando//se limpia y siempre es la ultima linea a mostrar-->
+                </div> 
+                <div class="linea hidden" id="promptClone">
+                    D:\Guest> <span class="inputClone" ></span> <!--Linea clonada oculta -->
+                </div> 
+                <div id="help" class="hidden">
+                    <span class="command">currencies:</span><br>
+                    EUR  -- Euro<br>
+                    GBP  -- British Pound Sterling<br>
+                    USD  -- United States Dollar<br>      
+                                   
+                </div>
+                <div class="hidden" id="exchange">
+                    
+                </div>
+                
+            </div>
+            
+        </main>
+        
+        <script src="D:\Proyectos\consola\index.js"></script>
+    </body>
+
+
+
+</html>

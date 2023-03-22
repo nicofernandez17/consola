@@ -1,0 +1,99 @@
+body {
+    background-color: #B8B1B1;
+    font-family: 'Fira Code', monospace;
+    font-size: 12px;
+}
+
+main {
+    margin:150px auto;
+    max-width: 50vw;
+    border: 1px solid black;
+
+}
+
+i {
+    font-size: 15px;
+    padding: 4px 7px;
+}
+
+.ventana {
+    height: 23px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+   
+}
+
+.vent {
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    
+
+
+}
+
+.i-close-h:hover{
+    background-color: red;
+    color: white;
+    
+}
+
+.i-hover:hover {
+    background-color: #EBEBEB;
+    
+}
+
+
+.right-vent > i{
+    padding:4px 10px;
+    color: #A39F9F;
+    
+}
+
+
+
+.consola {
+    overflow-y: scroll;
+    min-height: 55vh;
+    max-height: 55vh;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.consola > div {
+    margin-top: 5px;
+}
+
+
+.welcome {
+    margin-bottom: 10px;
+}
+
+.command {
+    color: yellow;
+    font-weight: 100;
+}
+
+.danger {
+    color: red;
+}
+
+input {
+    color: white;
+    background-color: black;
+    border: none;
+    font-family: 'Fira Code', monospace;
+    font-size: 12px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
